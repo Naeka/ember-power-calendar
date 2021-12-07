@@ -15,6 +15,7 @@
         {{#each week.days key='id' as |day|}}
           <button type="button"
             data-date="{{day.id}}"
+            tabindex="-1"
             class={{ember-power-calendar-day-classes day @calendar this.weeks this.dayClass}}
             {{on "focus" this.handleDayFocus}}
             {{on "blur" this.handleDayBlur}}
